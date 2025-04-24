@@ -38,11 +38,12 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="300dp"
-                android:layout_height="29dp"
-                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:contentDescription="@string/alt_bottom_sheet_chevron"
-                android:src="@drawable/redchevron111" />
+                android:src="@drawable/icn_chevron_up" />
         </RelativeLayout>
 
         <!-- Inference time row -->

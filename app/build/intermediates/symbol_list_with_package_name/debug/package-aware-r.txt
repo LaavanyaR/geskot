@@ -1818,7 +1818,6 @@ color mp_color_error
 color mp_color_primary
 color mp_color_primary_dark
 color mp_color_primary_variant
-color mp_color_primaryd
 color mp_color_secondary
 color mp_color_secondary_variant
 color mtrl_btn_bg_color_selector
@@ -1878,7 +1877,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color own_background
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2650,7 +2648,6 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
-drawable mahindrarise
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2712,8 +2709,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable redchevron
-drawable redchevron111
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3445,9 +3440,8 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_bottom_nav
-mipmap own
-mipmap own_foreground
-mipmap own_round
+mipmap ic_launcher
+mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
