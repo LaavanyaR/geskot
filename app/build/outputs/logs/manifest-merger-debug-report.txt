@@ -144,9 +144,9 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\
 	tools:ignore
 		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:40:9-35
 	android:roundIcon
-		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:36:9-54
+		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:36:9-46
 	android:icon
-		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:34:9-43
+		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:34:9-35
 	android:allowBackup
 		ADDED from C:\app\Ges\app\src\main\AndroidManifest.xml:33:9-35
 	android:theme
