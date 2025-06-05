@@ -25,12 +25,14 @@
     android:padding="@dimen/bottom_sheet_padding"
     app:behavior_hideable="false"
     app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:visibility="gone">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <!-- Chevron indicating that the bottom sheet is expandable -->
         <RelativeLayout
@@ -43,7 +45,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:contentDescription="@string/alt_bottom_sheet_chevron"
-                android:src="@drawable/icn_chevron_up" />
+                android:src="@drawable/icn_chevron_up"
+                android:visibility="gone"/>
         </RelativeLayout>
 
         <!-- Inference time row -->
@@ -79,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/bottom_sheet_default_row_margin"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -128,7 +132,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/bottom_sheet_default_row_margin"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -177,7 +182,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/bottom_sheet_default_row_margin"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -225,7 +231,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/bottom_sheet_default_row_margin">
+            android:layout_marginTop="@dimen/bottom_sheet_default_row_margin"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"

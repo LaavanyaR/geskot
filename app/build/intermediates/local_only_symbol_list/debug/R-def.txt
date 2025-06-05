@@ -14,6 +14,7 @@ color mp_color_primary_dark
 color mp_color_primary_variant
 color mp_color_secondary
 color mp_color_secondary_variant
+color own_background
 color toolbar_background
 dimen bottom_sheet_control_btn_size
 dimen bottom_sheet_control_text_side_margin
@@ -32,12 +33,16 @@ drawable ic_baseline_photo_library_24
 drawable ic_minus
 drawable ic_plus
 drawable icn_chevron_up
+drawable mahindrarise
 drawable media_pipe_banner
+drawable redchevron
+drawable redchevron111
 id action_camera_to_permissions
 id action_permissions_to_camera
 id bottom_sheet_layout
 id camera_container
 id camera_fragment
+id constraintLayout
 id detection_threshold_minus
 id detection_threshold_plus
 id detection_threshold_value
@@ -74,8 +79,9 @@ layout fragment_gallery
 layout info_bottom_sheet
 layout item_gesture_recognizer_result
 menu menu_bottom_nav
-mipmap ic_launcher
-mipmap ic_launcher_round
+mipmap own
+mipmap own_foreground
+mipmap own_round
 navigation nav_graph
 string alt_bottom_sheet_chevron
 string alt_bottom_sheet_max_results_button_minus

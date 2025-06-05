@@ -315,6 +315,7 @@ class CameraFragment : Fragment(),
                 .setTargetRotation(fragmentCameraBinding.viewFinder.display.rotation)
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                 .setOutputImageFormat(ImageAnalysis.OUTPUT_IMAGE_FORMAT_RGBA_8888)
+                //.setMaxResolution()
                 .build()
                 // The analyzer can then be assigned to the instance
                 .also {
@@ -332,6 +333,7 @@ class CameraFragment : Fragment(),
             camera = cameraProvider.bindToLifecycle(
                 this, cameraSelector, preview, imageAnalyzer
             )
+            // add camera resolution
 
             // Attach the viewfinder's surface provider to preview use case
             preview?.setSurfaceProvider(fragmentCameraBinding.viewFinder.surfaceProvider)

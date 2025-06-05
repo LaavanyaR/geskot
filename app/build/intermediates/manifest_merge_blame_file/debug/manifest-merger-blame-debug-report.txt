@@ -54,19 +54,19 @@
 40-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\mrv\.gradle\caches\8.9\transforms\4ac34efd1de8649b105bd435c78e42ba\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:26:22-64
 41
 42    <application
-42-->C:\app\Ges\app\src\main\AndroidManifest.xml:32:5-56:19
+42-->C:\app\Ges\app\src\main\AndroidManifest.xml:32:5-57:19
 43        android:allowBackup="true"
 43-->C:\app\Ges\app\src\main\AndroidManifest.xml:33:9-35
 44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 44-->[androidx.core:core:1.8.0] C:\Users\mrv\.gradle\caches\8.9\transforms\9439ebeccd8bacccc5e10d0bc580c5d0\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 45        android:debuggable="true"
 46        android:extractNativeLibs="false"
-47        android:icon="@mipmap/ic_launcher"
-47-->C:\app\Ges\app\src\main\AndroidManifest.xml:34:9-43
+47        android:icon="@mipmap/own_round"
+47-->C:\app\Ges\app\src\main\AndroidManifest.xml:34:9-41
 48        android:label="@string/app_name"
 48-->C:\app\Ges\app\src\main\AndroidManifest.xml:35:9-41
-49        android:roundIcon="@mipmap/ic_launcher_round"
-49-->C:\app\Ges\app\src\main\AndroidManifest.xml:36:9-54
+49        android:roundIcon="@mipmap/own_round"
+49-->C:\app\Ges\app\src\main\AndroidManifest.xml:36:9-46
 50        android:supportsRtl="true"
 50-->C:\app\Ges\app\src\main\AndroidManifest.xml:37:9-35
 51        android:taskAffinity=""
@@ -75,29 +75,29 @@
 53        android:theme="@style/Theme.GestureRecognizer" >
 53-->C:\app\Ges\app\src\main\AndroidManifest.xml:39:9-55
 54        <activity
-54-->C:\app\Ges\app\src\main\AndroidManifest.xml:42:9-55:20
+54-->C:\app\Ges\app\src\main\AndroidManifest.xml:44:9-56:20
 55            android:name="com.google.mediapipe.examples.gesturerecognizer.MainActivity"
-55-->C:\app\Ges\app\src\main\AndroidManifest.xml:43:13-41
+55-->C:\app\Ges\app\src\main\AndroidManifest.xml:44:19-47
 56            android:exported="true" >
-56-->C:\app\Ges\app\src\main\AndroidManifest.xml:44:13-36
+56-->C:\app\Ges\app\src\main\AndroidManifest.xml:45:13-36
 57            <intent-filter>
-57-->C:\app\Ges\app\src\main\AndroidManifest.xml:45:13-49:29
+57-->C:\app\Ges\app\src\main\AndroidManifest.xml:46:13-50:29
 58                <action android:name="android.intent.action.MAIN" />
-58-->C:\app\Ges\app\src\main\AndroidManifest.xml:46:17-69
-58-->C:\app\Ges\app\src\main\AndroidManifest.xml:46:25-66
+58-->C:\app\Ges\app\src\main\AndroidManifest.xml:47:17-69
+58-->C:\app\Ges\app\src\main\AndroidManifest.xml:47:25-66
 59
 60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\app\Ges\app\src\main\AndroidManifest.xml:48:17-77
-60-->C:\app\Ges\app\src\main\AndroidManifest.xml:48:27-74
+60-->C:\app\Ges\app\src\main\AndroidManifest.xml:49:17-77
+60-->C:\app\Ges\app\src\main\AndroidManifest.xml:49:27-74
 61            </intent-filter>
 62
 63            <!-- Declare notch support -->
 64            <meta-data
-64-->C:\app\Ges\app\src\main\AndroidManifest.xml:52:13-54:40
+64-->C:\app\Ges\app\src\main\AndroidManifest.xml:53:13-55:40
 65                android:name="android.notch_support"
-65-->C:\app\Ges\app\src\main\AndroidManifest.xml:53:17-53
+65-->C:\app\Ges\app\src\main\AndroidManifest.xml:54:17-53
 66                android:value="true" />
-66-->C:\app\Ges\app\src\main\AndroidManifest.xml:54:17-37
+66-->C:\app\Ges\app\src\main\AndroidManifest.xml:55:17-37
 67        </activity>
 68
 69        <uses-library

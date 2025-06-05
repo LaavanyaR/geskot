@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +28,9 @@ public final class FragmentGalleryBinding implements ViewBinding {
 
   @NonNull
   public final InfoBottomSheetBinding bottomSheetLayout;
+
+  @NonNull
+  public final ConstraintLayout constraintLayout;
 
   @NonNull
   public final FloatingActionButton fabGetContent;
@@ -50,13 +54,14 @@ public final class FragmentGalleryBinding implements ViewBinding {
   public final VideoView videoView;
 
   private FragmentGalleryBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull InfoBottomSheetBinding bottomSheetLayout,
+      @NonNull InfoBottomSheetBinding bottomSheetLayout, @NonNull ConstraintLayout constraintLayout,
       @NonNull FloatingActionButton fabGetContent, @NonNull ImageView imageResult,
       @NonNull OverlayView overlay, @NonNull ContentLoadingProgressBar progress,
       @NonNull RecyclerView recyclerviewResults, @NonNull TextView tvPlaceholder,
       @NonNull VideoView videoView) {
     this.rootView = rootView;
     this.bottomSheetLayout = bottomSheetLayout;
+    this.constraintLayout = constraintLayout;
     this.fabGetContent = fabGetContent;
     this.imageResult = imageResult;
     this.overlay = overlay;
@@ -99,6 +104,12 @@ public final class FragmentGalleryBinding implements ViewBinding {
         break missingId;
       }
       InfoBottomSheetBinding binding_bottomSheetLayout = InfoBottomSheetBinding.bind(bottomSheetLayout);
+
+      id = R.id.constraintLayout;
+      ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout == null) {
+        break missingId;
+      }
 
       id = R.id.fabGetContent;
       FloatingActionButton fabGetContent = ViewBindings.findChildViewById(rootView, id);
@@ -143,8 +154,8 @@ public final class FragmentGalleryBinding implements ViewBinding {
       }
 
       return new FragmentGalleryBinding((CoordinatorLayout) rootView, binding_bottomSheetLayout,
-          fabGetContent, imageResult, overlay, progress, recyclerviewResults, tvPlaceholder,
-          videoView);
+          constraintLayout, fabGetContent, imageResult, overlay, progress, recyclerviewResults,
+          tvPlaceholder, videoView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
